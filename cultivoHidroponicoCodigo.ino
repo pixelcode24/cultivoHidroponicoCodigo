@@ -1,3 +1,5 @@
+// all made with love by jairo gomez!
+
 // librerias
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
