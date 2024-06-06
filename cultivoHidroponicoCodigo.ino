@@ -138,8 +138,6 @@ void loop() {
     lcd.print("     ");
   }
 
-
-
   if (contador == 2) {
     lcd.setCursor(0, 0);
     lcd.print("     Humedad    ");
@@ -148,6 +146,7 @@ void loop() {
     lcd.print(humedad2);
     lcd.print("%");
   }
+
   if (contador == 3) {
     lcd.setCursor(0, 0);
     lcd.print("     lluvia    ");
@@ -156,18 +155,21 @@ void loop() {
     lcd.print(RainSensorVal);
     lcd.print("% ");
   }
+
   if (contador == 4) {
     lcd.setCursor(0, 0);
     lcd.print("hecho por jairo");
     lcd.setCursor(0, 1);
     lcd.print("gomez 8C       ");
   }
+
   if (contador == 5) {
     lcd.setCursor(0, 0);
     lcd.print("   conexiones: ");
     lcd.setCursor(0, 1);
     lcd.print("DHT11 DAT -> D2");
   }
+
   if (contador == 6) {
     lcd.setCursor(0, 1);
     lcd.print("RAIN A0 -> A1  ");
@@ -177,6 +179,7 @@ void loop() {
     lcd.setCursor(0, 1);
     lcd.print("SOILCA-A0 -> A0");
   }
+  
   if (contador == 8) {
     lcd.setCursor(0, 0);
     lcd.print("     LOVE TO        ");
