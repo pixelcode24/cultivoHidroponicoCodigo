@@ -21,9 +21,9 @@ LiquidCrystal_I2C lcd(0x27, 16, 2); //asignacion de las dimensiones
 int contador = 1; //para el menu
 const int lecturaCapacitiva = A0; //pin de lectura capacitiva
 int humedad2; // humedad (mapeada con los valores de arriva ) de el capacitor
-int lecturalluvia; //lectura de lluvia
-int rainSensorNA = 625; //valor mas bajo de el sesnor para mapear (sin agua)
-int rainSensorMAX = 100; //valor mas alto de el sesnor para mapear (mucha agua)
+int lecturalluvia = A1; //lectura de lluvia
+int rainSensorNA = 966; //valor mas bajo de el sesnor para mapear (sin agua)
+int rainSensorMAX = 180; //valor mas alto de el sesnor para mapear (mucha agua)
 int RainSensorVal; //guardar el valor de lluvia
 int sensorValue1; //para guardar el valor de el sensor capacitivo
 int sensorValue2; //para guardar el valor de el sensor de lluvia
@@ -73,7 +73,6 @@ void setup() {
 
 void loop() {
   digitalWrite(13, HIGH);
-  lecturalluvia = analogRead(A1);
 
   //dht reads...
   humedad = HT.readHumidity();
